@@ -1,0 +1,356 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background: hsl(229, 24%, 87%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  transform: translateY(15%);
+  padding: 0.5rem;
+  width: 50rem;
+  height: 31rem;
+  border-radius: 5px;
+  gap: 8rem;
+}
+main .steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: hsl(243, 100%, 62%);
+  background-image: url("/assets/images/bg-sidebar-desktop.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 30.5%;
+  background-size: 15rem;
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+main .steps .step {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.1rem;
+}
+main .steps .step h6 {
+  border: 1px solid hsl(206, 94%, 87%);
+  padding: 4% 6%;
+  border-radius: 110%;
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 100%);
+}
+main .steps h5.light {
+  color: hsl(231, 11%, 63%);
+  font-weight: 100;
+}
+main .steps h5 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 550;
+  line-height: 1rem;
+}
+main .steps .step.one h6 {
+  background-color: hsl(206, 94%, 87%);
+  color: hsl(213, 96%, 18%);
+}
+main .right-side {
+  position: relative;
+  left: -3rem;
+  height: 100%;
+}
+main .right-side section {
+  padding: 2rem 2rem 0 0;
+}
+main .right-side section h1 {
+  color: hsl(213, 96%, 18%);
+}
+main .right-side section h4 {
+  color: hsl(231, 11%, 63%);
+  font-weight: 100;
+  font-size: 13.5px;
+  margin-top: 0.5rem;
+}
+main .right-side section label {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  font-size: 13px;
+}
+main .right-side section input {
+  margin: 0.5rem 0 1rem 0;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid hsl(231, 11%, 63%);
+  transition: border 0.1s ease-in-out;
+  color: hsl(213, 96%, 18%);
+  font-weight: 600;
+}
+main .right-side section input::-moz-placeholder {
+  font-weight: 500;
+}
+main .right-side section input::placeholder {
+  font-weight: 500;
+}
+main .right-side section input:active,
+main .right-side section input:focus {
+  border: 1px solid hsl(243, 100%, 62%);
+  outline: none !important;
+}
+main .right-side section form {
+  margin-top: 1.5rem;
+}
+main .right-side .next {
+  position: relative;
+  float: right;
+  margin: 0 2rem 0 0;
+  border: none;
+  background: hsl(213, 96%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.8rem 1.1rem;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 7px;
+  top: -13rem;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+main .right-side .next:hover {
+  filter: brightness(120%);
+}
+main .personal-info {
+  position: relative;
+  right: -35rem;
+}
+main .select-plan {
+  position: relative;
+  top: -20.8rem;
+  right: -70rem;
+}
+main .select-plan .plans {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  /*.card:active,
+  .card:focus,
+  .card:hover
+  {
+      border-color:$purpishBlue;
+      //outline: none !important;
+  }*/
+}
+main .select-plan .plans .card2 {
+  width: 7rem;
+}
+main .select-plan .plans #card {
+  margin-top: 1rem;
+  width: 8rem;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid hsl(229, 24%, 87%);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+main .select-plan .plans #card.active {
+  border-color: hsl(243, 100%, 62%);
+  background-color: rgb(240, 245, 248);
+}
+main .select-plan .plans #card:hover {
+  border-color: hsl(243, 100%, 62%);
+}
+main .select-plan .plans #card h4 {
+  margin-top: 2rem;
+}
+main .select-plan .plans .card h4 {
+  color: hsl(213, 96%, 18%);
+  font-weight: 600;
+}
+main .select-plan .plans .card h5 {
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+}
+main .select-plan .plans .card1 h5:before {
+  content: "$9/mo";
+}
+main .select-plan .plans .card2 h5:before {
+  content: "$12/mo";
+}
+main .select-plan .plans .card3 h5:before {
+  content: "$15/mo";
+}
+main .select-plan .plans .card.style:after {
+  content: "2 months free";
+  color: hsl(213, 96%, 18%);
+  font-size: 11px;
+  position: relative;
+  top: 0.5rem;
+  width: 100%;
+  font-weight: 600;
+}
+main .select-plan .plans .card1.style h5::before {
+  content: "$90/yr";
+}
+main .select-plan .plans .card2.style h5::before {
+  content: "$120/yr";
+}
+main .select-plan .plans .card3.style h5::before {
+  content: "$150/yr";
+}
+main .select-plan .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 1.5rem;
+  gap: 1.5rem;
+  padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+  width: 100%;
+  background-color: rgb(240, 245, 248);
+}
+main .select-plan .time * {
+  font-weight: 600;
+  font-size: 13px;
+}
+main .select-plan .time .oblong {
+  cursor: pointer;
+  width: 2rem;
+  padding: 0.2rem 1.1rem;
+  position: relative;
+  top: 0.2rem;
+  background-color: hsl(213, 96%, 18%);
+  border-radius: 10px;
+}
+main .select-plan .time .oblong .circle {
+  background-color: hsl(0, 0%, 100%);
+  width: 0.8rem;
+  border-radius: 10px;
+  height: 0.8rem;
+  position: relative;
+  left: -0.9rem;
+  transition: 0.2s ease-in-out;
+}
+main .select-plan .time .oblong .circle.active {
+  position: relative;
+  left: 0.1rem;
+}
+main .select-plan .time .monthly {
+  color: hsl(213, 96%, 18%);
+  transition: 0.2s ease-in-out;
+}
+main .select-plan .time .monthly.active {
+  color: hsl(231, 11%, 63%);
+}
+main .select-plan .time .yearly.active {
+  color: hsl(213, 96%, 18%);
+}
+main .add-ons.active {
+  position: relative;
+  top: -40rem;
+}
+main .add-ons {
+  position: relative;
+  top: -38.8rem;
+  left: 105rem;
+}
+main .add-ons .choices {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .add-ons .choices .choice {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  border: 1px solid hsl(229, 24%, 87%);
+  padding: 0.8rem 0.2rem 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+main .add-ons .choices .choice .ch1:before {
+  content: "+$1/mo";
+  font-size: 12px;
+  color: hsl(243, 100%, 62%);
+  position: relative;
+  top: 0.3rem;
+  left: 5.2rem;
+}
+main .add-ons .choices .choice .ch1.active:before {
+  content: "+$10/yr";
+}
+main .add-ons .choices .choice .ch2.active:before {
+  content: "+$20/yr";
+}
+main .add-ons .choices .choice .ch3.active:before {
+  content: "+$20/yr";
+}
+main .add-ons .choices .choice .ch2:before {
+  content: "+$2/mo";
+  font-size: 12px;
+  color: hsl(243, 100%, 62%);
+  position: relative;
+  top: 0.3rem;
+  left: 6.8rem;
+}
+main .add-ons .choices .choice .ch3:before {
+  content: "+$2/mo";
+  font-size: 12px;
+  color: hsl(243, 100%, 62%);
+  position: relative;
+  top: 0.3rem;
+  left: 4.5rem;
+}
+main .add-ons .choices .choice input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+main .add-ons .choices .choice .txt {
+  line-height: 1.2rem;
+  position: relative;
+  top: -0.4rem;
+  left: -1rem;
+}
+main .add-ons .choices .choice .txt h4 {
+  font-size: 13px;
+  color: hsl(213, 96%, 18%);
+  font-weight: 600;
+}
+main .add-ons .choices .choice .txt h5 {
+  font-size: 12px;
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+}
+main .add-ons .choice.active {
+  border: 1px solid hsl(243, 100%, 62%);
+  background: rgb(249, 245, 255);
+}
+main .add-ons .choice.active input[type=checkbox]::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  background-color: hsl(243, 100%, 62%);
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  top: -0.5rem;
+  left: -0.6rem;
+  font-size: 12px;
+  padding: 0.2rem;
+  border-radius: 4px;
+}
+main .add-ons .choice:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+}/*# sourceMappingURL=style.css.map */
